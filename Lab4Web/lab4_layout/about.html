@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html" class="active">About</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <section id="hero">
+            <h1>Tentang Saya</h1>
+            <p>Perkenalan singkat, deskripsi, dan portfolio hasil praktikum pemrograman web.</p>
+        </section>
+        <section id="wrapper">
+            <section id="main">
+                <article class="entry profile">
+                    <h2 class="section-title">Deskripsi</h2>
+                    <img src="img/profile.png" alt="Foto profil">
+                    <p>Halo, saya mahasiswa Teknik Informatika Universitas Pelita Bangsa yang sedang mempelajari pemrograman web. Pada praktikum ini saya belajar menyusun layout halaman menggunakan elemen semantik HTML5 serta properti CSS seperti <em>box model</em>, <em>float</em>, dan <em>clear</em>.</p>
+                    <p>Tujuan saya adalah dapat membuat tampilan website yang rapi, konsisten, dan mudah dipelihara.</p>
+                </article>
+                <hr class="divider">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="row portfolio">
+                    <div class="box">
+                        <img src="img/project1.png" alt="Proyek 1">
+                        <h3>Layout Sederhana</h3>
+                        <p>Halaman web dengan header, navigasi, hero, konten, sidebar, dan footer.</p>
+                        <a href="home.html" class="btn btn-default">Lihat proyek</a>
+                    </div>
+                    <div class="box">
+                        <img src="img/project2.png" alt="Proyek 2">
+                        <h3>Box Element</h3>
+                        <p>Eksperimen box model dan properti float serta clear pada elemen div.</p>
+                        <a href="../lab4_box.html" class="btn btn-default">Lihat proyek</a>
+                    </div>
+                    <div class="box">
+                        <img src="img/project3.png" alt="Proyek 3">
+                        <h3>Form Kontak</h3>
+                        <p>Formulir isian nama, email, dan pesan dengan tampilan yang konsisten.</p>
+                        <a href="kontak.html" class="btn btn-default">Lihat proyek</a>
+                    </div>
+                </div>
+            </section>
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Data Diri</h3>
+                    <ul class="info-list">
+                        <li><strong>Nama</strong>Nama Mahasiswa</li>
+                        <li><strong>NIM</strong>000000000</li>
+                        <li><strong>Program Studi</strong>Teknik Informatika</li>
+                        <li><strong>Kampus</strong>Universitas Pelita Bangsa</li>
+                    </ul>
+                </div>
+                <div class="widget-box">
+                    <h3 class="title">Keahlian</h3>
+                    <ul class="info-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Layout Responsif Dasar</li>
+                        <li>Git &amp; GitHub</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
